@@ -26,8 +26,6 @@
 /Users/chenhaowei/IdeaProjects/csi5112service/obj/Debug/net6.0/csi5112service.genruntimeconfig.cache
 /Users/chenhaowei/IdeaProjects/csi5112service/obj/Debug/net6.0/ref/csi5112service.dll
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
 =======
 >>>>>>> e66f323 (updated backend)
 /Users/jiamingli/Desktop/CSI5112Backend-master/bin/Debug/net6.0/appsettings.Development.json
@@ -138,10 +136,7 @@
 /Users/jiamingli/Desktop/可以跑的 3.17/CSI5112Backend-master/obj/Debug/net6.0/csi5112service.pdb
 /Users/jiamingli/Desktop/可以跑的 3.17/CSI5112Backend-master/obj/Debug/net6.0/csi5112service.genruntimeconfig.cache
 /Users/jiamingli/Desktop/可以跑的 3.17/CSI5112Backend-master/obj/Debug/net6.0/ref/csi5112service.dll
-<<<<<<< HEAD
 >>>>>>> a70f1fb (updated backend)
-=======
->>>>>>> e66f323 (updated backend)
 /Users/chenhaowei/IdeaProjects/SE/csi5112-v9/可以跑的 3.17/CSI5112Backend/bin/Debug/net6.0/appsettings.Development.json
 /Users/chenhaowei/IdeaProjects/SE/csi5112-v9/可以跑的 3.17/CSI5112Backend/bin/Debug/net6.0/appsettings.json
 /Users/chenhaowei/IdeaProjects/SE/csi5112-v9/可以跑的 3.17/CSI5112Backend/bin/Debug/net6.0/csi5112service
@@ -551,8 +546,6 @@
 /Users/jiamingli/Desktop/3月30下午改小bug版/CSI5112Backend-master/obj/Debug/net6.0/csi5112service.pdb
 /Users/jiamingli/Desktop/3月30下午改小bug版/CSI5112Backend-master/obj/Debug/net6.0/csi5112service.genruntimeconfig.cache
 /Users/jiamingli/Desktop/3月30下午改小bug版/CSI5112Backend-master/obj/Debug/net6.0/ref/csi5112service.dll
-<<<<<<< HEAD
-=======
 /Users/jiamingli/Downloads/CSI5112Backend-master/bin/Debug/net6.0/appsettings.Development.json
 /Users/jiamingli/Downloads/CSI5112Backend-master/bin/Debug/net6.0/appsettings.json
 /Users/jiamingli/Downloads/CSI5112Backend-master/bin/Debug/net6.0/csi5112service
@@ -698,4 +691,14 @@
 /Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/obj/Debug/net6.0/csi5112service.pdb
 /Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/obj/Debug/net6.0/csi5112service.genruntimeconfig.cache
 /Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/obj/Debug/net6.0/ref/csi5112service.dll
->>>>>>> e66f323 (updated backend)
+>>>>>>> bed7dd3 (v1.0)
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.csproj.AssemblyReference.cache
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.AssemblyInfoInputs.cache
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.AssemblyInfo.cs
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.csproj.CoreCompileInputs.cache
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.MvcApplicationPartsAssemblyInfo.cs
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.MvcApplicationPartsAssemblyInfo.cache
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.dll
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/refint/csi5112service.dll
+/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/Debug/net6.0/csi5112service.pdb

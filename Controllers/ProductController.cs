@@ -17,24 +17,24 @@ public class ProductController : ControllerBase{
         return await _productService.GetAsync();
     }
 
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Product>> Get(string id) {
-        var product = await _productService.GetAsync(id);
+    [HttpGet("{productId}")]
+    public async Task<ActionResult<Product>> Get(string productId) {
+        var product = await _productService.GetAsync(productId);
         if (product is null) {
             return NotFound();
         }
         return product;
     }
 
-    [HttpPost()]
+    [HttpPost("{productId}")]
     public async Task<ActionResult> Post(Product newProduct) {
         await _productService.CreateAsync(newProduct);
-        return CreatedAtAction(nameof(Get), new {id = newProduct.Id}, newProduct);
+        return CreatedAtAction(nameof(Get), new {productId = newProduct.ProductId}, newProduct);
     }
 
-    [HttpPut()]
-    public async Task<ActionResult> Update(Product updatedProduct) {
-        bool updated = await _productService.UpdateAsync(updatedProduct);
+    [HttpPut("{productId}")]
+    public async Task<ActionResult> Update(string productId, Product updatedProduct) {
+        bool updated = await _productService.UpdateAsync(productId, updatedProduct);
         if (!updated) {
             // this assumes that a failed update is always caused by the object 
             // not being found. This needs to be changed if the cause may be different
@@ -43,13 +43,13 @@ public class ProductController : ControllerBase{
         return NoContent();
     }
 
-    [HttpDelete("{id}")]
-    public async Task<ActionResult> Delete(string id) {
-        var proudcts = await _productService.GetAsync(id);
-        if (proudcts is null) {
+    [HttpDelete("{productId}")]
+    public async Task<ActionResult> Delete(string ProductId) {
+        var todo = await _productService.GetAsync(ProductId);
+        if (todo is null) {
             return NotFound();
         }
-        await _productService.DeleteAsync(proudcts.Id);
+        await _productService.DeleteAsync(todo.ProductId);
         return NoContent();
     }
 

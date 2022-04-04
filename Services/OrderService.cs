@@ -1,44 +1,48 @@
 using csi5112service.models;
-using Microsoft.Extensions.Options;
-using MongoDB.Driver;
 
 namespace csi5112service.services;
 
-public class OrderService{
-    private readonly IMongoCollection<Order> _orders;
+public class OrderServcie{
+    //Data placeholder
+    private List<Order> orders = new List<Order>(){
+        new Order("o001", "u001", "01-Jan-2022", 34.99, "33-186 Stewart Street"),
+        new Order("o002", "u002", "02-Feb-2022", 25.49, "1207-169 Lees Ave"),
+        new Order("o003", "u003", "03-Mar-2022", 88.79, "1212-171 Lees Ave")
+    };
 
-    public OrderService(IOptions<ShopDatabaseSettings> shopDatabaseSettings) {
-        var settings = MongoClientSettings.FromConnectionString(shopDatabaseSettings.Value.ConnectionString);
-        settings.ServerApi = new ServerApi(ServerApiVersion.V1);
-        var client = new MongoClient(settings);
-        var database = client.GetDatabase(shopDatabaseSettings.Value.DatabaseName);
-        _orders = database.GetCollection<Order>(shopDatabaseSettings.Value.OrderCollectionName);
+    public OrderServcie(){
     }
 
     public async Task CreateAsync(Order newOrder){
-        // orders.Add(newOrder);
-        newOrder.Id = null; // will be set by Mongo
-        await _orders.InsertOneAsync(newOrder);
+        orders.Add(newOrder);
     }
 
     public async Task<List<Order>> GetAsync(){
-        // return orders;
-        return await _orders.Find(_ => true).ToListAsync();
+        return orders;
     }
 
-    public async Task<Order> GetAsync(string Id){
-        // return orders.Find(x => x.OrderId == OrderId);
-        return await _orders.Find<Order>(order => order.Id == Id).FirstOrDefaultAsync(); 
-
+    public async Task<Order> GetAsync(string OrderId){
+        return orders.Find(x => x.OrderId == OrderId);
     }
 
     public async Task<bool> UpdateAsync(String OrderId, Order UpdatedOrder){
-        ReplaceOneResult r = await _orders.ReplaceOneAsync(order => order.Id == UpdatedOrder.Id, UpdatedOrder);
-        return r.IsModifiedCountAvailable && r.ModifiedCount == 1;
+        bool result = false;
+        int index = orders.FindIndex(x => x.OrderId == OrderId);
+        if (index != -1){
+            UpdatedOrder.OrderId = OrderId;
+            orders[index] = UpdatedOrder;
+            result = true;
+        }
+        return result;
     }
 
-    public async Task<bool> DeleteAsync(string Id){
-        DeleteResult r = await _orders.DeleteOneAsync(order => order.Id == Id);
-        return r.DeletedCount == 1;
+    public async Task<bool> DeleteAsync(string OrderId){
+        bool deleted = false;
+        int index = orders.FindIndex(x => x.OrderId == OrderId);
+        if (index != -1){
+            orders.RemoveAt(index);
+            deleted = true;
+        }
+        return deleted;
     }
 }

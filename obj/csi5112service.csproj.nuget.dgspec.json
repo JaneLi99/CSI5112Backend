@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/csi5112service.csproj": {}
+    "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/csi5112service.csproj": {}
   },
   "projects": {
-    "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/csi5112service.csproj": {
+    "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/csi5112service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/csi5112service.csproj",
+        "projectUniqueName": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/csi5112service.csproj",
         "projectName": "csi5112service",
-        "projectPath": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/csi5112service.csproj",
+        "projectPath": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/csi5112service.csproj",
         "packagesPath": "/Users/jiamingli/.nuget/packages/",
-        "outputPath": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/obj/",
+        "outputPath": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-privacy/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jiamingli/.nuget/NuGet/NuGet.Config"
@@ -38,10 +38,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "MongoDB.Driver": {
-              "target": "Package",
-              "version": "[2.15.0, )"
-            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
