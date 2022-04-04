@@ -14,10 +14,6 @@ builder.Services.AddCors(options =>
                       });
 });
 
-
-
-
-
 // Add services to the container.
 
 // builder.Services.AddControllers();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iTbvx3AZ50L+yXJtGPqQTbOfhIEBR5ZH6bZlJWlL0xB3/2kQZd/2Y/tO8rx+sAyUTz2ESyNFDtBvBtjyUXnEJA==",
+  "dgSpecHash": "mHVOb6xB2y2mvpy5StuLZbbbGdf6kSP37H0ENQV6Uc25ipdOmukIMPQozuE8N2dTKL3E40xiEb4fNCEsW8elcQ==",
   "success": true,
-  "projectFilePath": "/Users/jiamingli/Desktop/3月30下午改小bug版/CSI5112Backend-master/csi5112service.csproj",
+  "projectFilePath": "/Users/jiamingli/Desktop/CSI5112Backend-master-mongo-old/csi5112service.csproj",
   "expectedPackageFiles": [
     "/Users/jiamingli/.nuget/packages/dnsclient/1.6.0/dnsclient.1.6.0.nupkg.sha512",
     "/Users/jiamingli/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
