@@ -17,7 +17,7 @@ https://docs.google.com/document/d/136ME0yaTBEST9zXmhI7QKAD8cvOJnqG-V2bblftk4lw/
 ![Data Model](https://github.com/RaccoonNinja0/CSI5112Backend/blob/master/Data_Model_group8.png) </br>
 
 - Postman collection for testing the API:
-https://documenter.getpostman.com/view/12075327/UVsPR5fi </br>
+https://documenter.getpostman.com/view/12075327/UyrBhvff </br>
 
 - Quality Assurance and Cloud Deployment Document: 
 https://docs.google.com/document/d/1yo-u2pCmwTJAkRsWXXXbxWe6dnb5XJEoGJska_LkmZk/edit#
